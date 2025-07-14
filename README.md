@@ -61,27 +61,11 @@ Once setup is complete, open your browser and go to:
 
 > ⚠️ You may see a browser security warning due to the self-signed certificate. It is safe to proceed.
 
-### 🔑 Default Admin Credentials
+### 🔑 Admin Credentials
 
 - **Username:** `admin`
 - **Password:** `admin`
 
----
-
-## 📂 Project Structure
-
-```text
-.
-├── main.tf                  # Terraform configuration
-├── variables.tf             # Optional input variables
-├── outputs.tf               # Terraform output values
-├── cert-manager.yaml        # (Optional) cert-manager CRDs
-├── keycloak.yaml            # (Optional) Keycloak manifest
-├── local-manifests/         # Additional Kubernetes YAMLs
-└── README.md                # This file
-```
-
----
 
 ## 📌 Notes
 
