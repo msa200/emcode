@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: keycloaktest-cert
+  namespace: default
+spec:
+  secretName: keycloaktest-tls  # This is the secret cert-manager will create
+  commonName: keycloaktest.com
+  dnsNames:
+    - keycloaktest.com
+  issuerRef:
+    name: selfsigned-issuer
+    kind: Issuer
+  duration: 8760h # 1 year
+  renewBefore: 720h # 30 days
+
