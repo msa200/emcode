@@ -30,7 +30,7 @@ resource "null_resource" "install_keycloak" {
 
 resource "null_resource" "apply_local_manifests" {
   provisioner "local-exec" {
-    command = "kubectl apply -f /root/emcode/manifests/"
+    command = "kubectl apply -f manifests/"
   }
 
   depends_on = [null_resource.install_keycloak]
